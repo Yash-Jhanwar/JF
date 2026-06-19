@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# API Scripts
+*api*.ts
+*api*.js
+test-api.ts
+
+# Ensure .env is explicitly ignored (along with .env*)
+.env
+.env.local
+.env.*.local
