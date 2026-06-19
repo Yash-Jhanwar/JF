@@ -1,4 +1,7 @@
+import { loadEnvConfig } from '@next/env';
 import { MongoClient } from 'mongodb';
+
+loadEnvConfig(process.cwd());
 
 const MONGODB_URI = process.env.MONGODB_URI;
 if (!MONGODB_URI) {

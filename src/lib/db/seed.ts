@@ -2,7 +2,10 @@
  * Seed script — populates MongoDB with mock data.
  * Run: npx tsx src/lib/db/seed.ts
  */
+import { loadEnvConfig } from '@next/env';
 import { MongoClient } from 'mongodb';
+
+loadEnvConfig(process.cwd());
 import {
   mockUsers,
   mockFirmSettings,
